@@ -1,0 +1,39 @@
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+@function rem-calc($px) {
+    @return (strip-unit($px) / 16) * 1rem;
+}
+
+@mixin mq($type, $size: 0) {
+    @if $type == landscape {
+        @media screen and (orientation: landscape) {
+            @content;
+        }
+    } @elseif $type == portrait {
+        @media screen and (orientation: portrait) {
+            @content;   
+        }
+    } @elseif $type == aspect {
+        @media screen and (aspect-ratio: $size) {
+            @content;
+        }
+    } @elseif $type == aspect-min {
+        @media screen and (min-aspect-ratio: $size) {
+            @content;
+        }
+    } @elseif $type == aspect-max {
+        @media screen and (max-aspect-ratio: $size) {
+            @content;
+        }
+    } @else {
+        @media screen and (#{$type}-width: $size) {
+            @content;
+        }
+    }
+}

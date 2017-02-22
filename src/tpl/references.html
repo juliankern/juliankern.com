@@ -1,0 +1,48 @@
+<section class="references">
+    <div class="container">
+        <h2>{{references.title}}</h2>
+        <hr class="small">
+        <p>{{references.text}}</p>
+        <div class="row">
+            <!--(bake-start _foreach="item:references.works")-->
+                <div class="col-xs-6 col-md-4 col-lg-3">
+                    <div class="references--item">
+                        <input type="checkbox" aria-hidden="true" id="work{{item@iteration}}">
+                        <label for="work{{item@iteration}}" role="button">
+                            <span class="sr-only">{{item.title}} {{sr.modal}}</span>
+                            <!--(bake includes/reference-image.html image="{{item.image.name}}" ext="{{item.image.extension}}" alt="{{item.image.alt}}")-->
+                        </label>
+                        <div class="references--item--inner">
+                            <!--(bake-start _foreach="tag:item.tags")-->
+                                <span class="tag tag-default">#{{tag}}</span>
+                            <!--(bake-end)-->
+                            <!--(bake-start _if="item.data")-->
+                                <script type="application/ld+json">
+                                 {{item.data | toJson}}
+                                </script>
+                            <!--(bake-end)-->
+                        </div>
+                        <label for="work{{item@iteration}}" class="references--modal--backdrop" aria-hidden="true"><span class="sr-only">{{sr.hideModal}}</span></label>
+                        <div class="references--modal--inner">
+                            <!--(bake includes/reference-modal-image.html image="{{item.image.name}}" ext="{{item.image.extension}}" alt="{{item.image.alt}}")-->
+                            <label for="work{{item@iteration}}" class="hidden-md-up" role="button">
+                                <span class="sr-only">{{sr.hideModal}}</span>
+                                <!--(bake includes/icon.html icon="arrows_remove")-->
+                            </label>
+                            <div class="references--modal--content">
+                                <h3>
+                                    {{item.title}}
+                                    <small>{{item.date}}</small>
+                                </h3>
+                                <p>{{item.text}}</p>
+                                <!--(bake-start _foreach="link:item.links")-->
+                                    <a href="{{link.url}}" target="_blank">{{link.title}}</a>
+                                <!--(bake-end)-->
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            <!--(bake-end)-->
+        </div>
+    </div>
+</section>

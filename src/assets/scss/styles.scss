@@ -1,0 +1,288 @@
+$brand-color: #b73333;
+
+@import "mixins";
+@import "fakestrap";
+
+body, html {
+    margin: 0;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif; 
+    // overflow-x: hidden;
+}
+
+body, html, .btn, small, .small {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+a {
+    color: $brand-color;
+
+    &:hover {
+        color: darken($brand-color, 20%);
+    }
+    
+    .sr-only {
+        color: #000;
+        background: #fff;
+    }
+}
+
+body {  
+    $scroller-color: $brand-color;
+    $scroller-background: #ddd;
+    
+    background: linear-gradient(to right top, 
+      $scroller-color 50%, 
+      $scroller-background 50%);
+    //6px = height of scroller but calc won't work with variables
+    background-size: 100% calc(100% - 100vh + .25rem); 
+    background-repeat: no-repeat;
+    
+    &::before {
+        content:'';
+        position: fixed;
+        top: .25rem;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        background: #fff;
+    }
+    
+    @include mq(min, 768px) {
+        background-size: 100% calc(100% - 100vh + .1rem);
+        
+        &::before {
+            top: .1rem;
+        }
+    }
+}
+
+a[href*="tel:"] {
+    @include mq(min, 768px) {
+        pointer-events: none;
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
+
+.scroller {
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #fff;
+}
+
+main {
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem 0;
+    
+    & + & {
+        border-top: 1px solid $brand-color;
+    }
+    
+    h2 {
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: 400;
+        
+        + hr {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.languages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    .active {
+        font-weight: bold;
+    }
+}
+
+main .languages {
+    position: absolute;
+    z-index: 20;
+    top: 1rem;
+    left: 1rem;
+}
+
+footer {
+    padding-bottom: 2rem;
+    text-align: center;
+
+    .languages li {
+        display: inline;
+        padding: 0 .5rem;
+    }
+}
+
+div.hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    text-align: center;
+    height: 0;
+
+    span {
+        line-height: 2rem;
+        text-transform: uppercase;
+        transform: translateY(-50%);
+        display: inline-block;
+        padding: 0 1rem;
+        background: #fff;
+        margin-top: -2px;
+    }
+}
+
+.tag.tag-default {
+    background: #777 !important; 
+}
+
+.icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: #000;
+    display: inline-block;
+
+    svg {
+        fill: currentColor;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.viewport {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    padding: 10px 20px;
+    border: 1px solid limegreen;
+    background: lighten(green, 50%);
+}
+
+hr {
+    &.small { width: rem-calc(200); }
+}
+
+*,
+.btn-group {
+    .btn-outline-brand {
+        color: lighten($brand-color, 15%);
+        background-image: none;
+        background-color: transparent;
+        border-color: lighten($brand-color, 15%);
+
+        &:hover {
+            color: #fff;
+            background-color: $brand-color;
+            border-color: $brand-color;
+        }
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 5px $brand-color;
+        }
+
+        &.active {
+            color: #fff;
+            background-color: $brand-color;
+            border-color: $brand-color;
+
+            &:hover {
+                background-color: darken($brand-color, 5%);
+                border-color: darken($brand-color, 6%);
+            }
+
+            &:focus {
+                outline: 0;
+                box-shadow: 0 0 5px darken($brand-color, 5%);
+            }
+        }
+    }
+
+    .btn-brand {
+        color: #fff;
+        background-color: $brand-color;
+        border-color: $brand-color;
+
+
+        &:hover {
+            color: #fff;
+            background-color: darken($brand-color, 5%);
+            border-color: darken($brand-color, 6%);
+        }
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 5px $brand-color;
+        }
+
+        &.active {
+            background-color: darken($brand-color, 7%);
+            border-color: darken($brand-color, 8%);
+
+            &:hover {
+                background-color: darken($brand-color, 10%);
+                border-color: darken($brand-color, 11%);
+            }
+
+            &:focus {
+                outline: 0;
+                box-shadow: 0 0 5px darken($brand-color, 5%);
+            }
+        }
+
+        .btn-group & {
+            & + .btn-brand {
+                border-left: 1px solid white;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.noscript + * {
+    display: none !important;
+}
+
+html.js .noscript {
+    display: none !important;
+
+    + * {
+        display: block !important;
+    }
+}
+
+
+@import "mainscreen";
+@import "about";
+@import "references";
+@import "service";
+@import "contact";

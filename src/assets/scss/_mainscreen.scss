@@ -1,0 +1,221 @@
+.mainscreen {
+    min-height: rem-calc(450);
+    height: 100vh;
+    padding: 0;
+
+    &--background {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        
+        img {
+            min-width: 100vw;
+            height: 100vh;
+            
+            @media screen and (max-aspect-ratio: 15/10) {
+                width: auto;
+                min-width: 100vw;
+                height: 100vh;
+                min-height: 0;
+            }
+
+            @media screen and (min-aspect-ratio: 15/10) {
+                width: 100vw;
+                min-width: 0;
+                height: auto;
+                min-height: 100vh;
+            }
+        }
+    }
+
+    &--dummy {
+        transition: height .5s;
+        height: 0;
+        
+        @media (prefers-reduced-motion) {
+            transition: all 0s;
+        }
+    }
+
+    &--form {
+        position: relative;
+        display: inline-block;
+        padding: 1rem;
+        width: 95vw;
+
+        .g-recaptcha {
+            margin-bottom: 1rem;
+        }
+
+        @include mq(min, 480px) {
+            width: 70vw;
+        }
+
+        @include mq(min, 992px) {
+            width: 40vw;
+        }
+
+        .btn-group .btn {
+            color: #fff;
+            border-color: #fff;
+            transition: all .25s;
+            
+            @media (prefers-reduced-motion) {
+                transition: all 0s;
+            }
+        }
+        
+        > input {
+            visibility: hidden;
+            position: absolute;
+            
+            &:checked {
+                ~ .tab {
+                    height: rem-calc(600);
+                    visibility: visible;
+                    transition: height .5s, visibility 0s;
+                    
+                    @media (prefers-reduced-motion) {
+                        transition: all 0s;
+                    }
+                }
+            
+                ~ .mainscreen--dummy {
+                    height: 60vh;
+                    transition: height 1s;
+                    
+                    @media (prefers-reduced-motion) {
+                        transition: all 0s;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tab {
+        position: absolute;
+        left: 1rem; right: 1rem;
+        margin-top: 1rem;
+        z-index: 2;
+        height: 0;
+        overflow: hidden;
+        transition: height .5s, visibility 0s .5s;
+        border-radius: .3rem;
+        box-shadow: 0 0 rem-calc(10) rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+
+        &--inner {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            background: #fff;
+            text-align: left;
+            height: 100%;
+            
+            form {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            
+            .form-message {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                
+                textarea {
+                    height: auto;
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+
+
+    div.hr {
+        margin: 1.5rem 0;
+    }
+    
+    .content {
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        padding: rem-calc(150) 0;
+        text-align: center;
+        background: linear-gradient(to bottom,transparent 0,rgba(0,0,0,.6) 25%,rgba(0,0,0,.6) 75%,transparent 100%);
+        position: relative;
+        top: 50vh;
+        width: 100%;
+        max-height: 100vh;
+        z-index: 2;
+
+        .icon-logo {
+            width: rem-calc(75);
+            height: rem-calc(75);
+            background-color: #565656;
+            border-radius: 50%;
+            margin: 0;
+            display: inline-block;
+            border: rem-calc(3) solid #fff;
+            transition: all .25s;
+            
+            &:hover {
+                width: rem-calc(100);
+                height: rem-calc(100);  
+                transform: rotate(360deg);
+                transition: all 1s 10s;
+            }
+        }
+
+        .headline {
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: rem-calc(50);
+            color: #fff;
+            letter-spacing: rem-calc(4);
+
+            @include mq(min, 480px) {
+                font-size: 3rem;
+            } 
+
+            @include mq(min, 768px) {
+                font-size: 5rem;
+            } 
+
+            span {
+                margin: 0;
+                padding: 0;
+                color: #fff;
+                
+                &:nth-child(3) {
+                    font-size: 50%;
+                }
+            }
+        }
+    }
+}
+
+.alert {
+    border-left: 3px solid transparent;
+    padding: .5rem;
+    margin: .5rem 0;
+    display: none;
+    
+    &-success {
+        border-color: rgba(50, 150, 50, 1);
+        
+        strong {
+            color: rgba(50, 150, 50, 1);
+        }
+    }
+    
+    &-error {
+        border-color: rgba(200, 50, 50, 1);
+        
+        strong {
+            color: rgba(200, 50, 50, 1);
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<section class="contact" itemscope itemtype="https://schema.org/LocalBusiness">
+    <h2>{{contact.title}}</h2>
+    <hr class="small">
+    <div class="contact--map" aria-hidden="true"></div>
+    <address class="contact--adress">
+        <strong itemprop="name">juliankern.{{domain}}</strong>
+    </address>
+    <address class="contact--adress" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="name">{{contact.address.name}}</span><br>
+        <span itemprop="streetAddress">{{contact.address.streetAddress}}</span><br>
+        <span itemprop="postalCode">{{contact.address.postalCode}}</span> <span itemprop="addressLocality">{{contact.address.addressLocality}}</span><br>
+        <span itemprop="addressCountry">{{contact.address.addressCountry}}</span>
+    </address>
+    <address class="contact--adress">
+        <a href="tel:+4915142515126"><span class="sr-only">{{sr.call}} </span>+49 151 42 5151 25</a><br>
+        <a data-mail data-mail-text href="mailto:honeypot@juliankern.com" title="{{mainscreen.mailMePrefix}} {{mainscreen.mailMe}}">honeypot@juliankern.com</a>
+    </address>
+    <span class="hidden" itemprop="telephone">+49 151 42 5151 25</span>
+    <span class="hidden" itemprop="email">mail@juliankern.com</span>
+    <span class="hidden" itemprop="image">http://juliankern.com/assets/img/logo-square.png</span>
+    <span class="hidden" itemprop="priceRange">$$$</span>
+    <div class="row contact--social">
+        <div class="col-xs-12 col-sm-6">
+            <a class="icon-social" target="_blank" href="//twitter.com/juliankern">
+                <span class="sr-only">Twitter {{sr.profile}}</span>
+                <!--(bake includes/icon.html icon="twitter")-->
+            </a> 
+            <a class="icon-social" target="_blank" href="//google.com/+JulianKern">
+                <span class="sr-only">Google Plus {{sr.profile}}</span>
+                <!--(bake includes/icon.html icon="gplus")-->
+            </a> 
+            <a class="icon-social" target="_blank" href="//facebook.com/juliankernwebandmore">
+                <span class="sr-only">Facebook {{sr.profile}}</span>
+                <!--(bake includes/icon.html icon="facebook")-->
+            </a> 
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <a class="icon-social" target="_blank" href="//de.linkedin.com/in/juliankerncom">
+                <span class="sr-only">LinkedIn {{sr.profile}}</span>
+                <!--(bake includes/icon.html icon="linkedin")-->
+            </a> 
+            <a class="icon-social" target="_blank" href="//www.xing.com/profile/Julian_Kern4">
+                <span class="sr-only">Xing {{sr.profile}}</span>
+                <!--(bake includes/icon.html icon="xing")-->
+            </a> 
+            <a class="icon-social" target="_blank" href="//github.com/juliankern">
+                <span class="sr-only">GitHub {{sr.profile}}</span>
+                <!--(bake includes/icon.html icon="github")-->
+            </a> 
+        </div>
+    </div>
+</section>

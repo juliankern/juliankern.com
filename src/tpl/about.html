@@ -1,0 +1,12 @@
+<section class="about">
+    <div class="container">
+        <h2>{{about.title}}</h2>
+        <hr class="small">
+        <div class="about--logo">
+            <img src="assets/svg/logo.svg" alt="juliankern.{{domain}} logo">
+        </div>
+        <!--(bake-start _foreach="paragraph:about.content")-->
+            <p>{{paragraph}}</p>
+        <!--(bake-end)-->
+    </div>
+</section>

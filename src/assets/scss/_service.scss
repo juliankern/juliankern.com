@@ -1,0 +1,35 @@
+.service {
+    .row {
+        > div {
+            + div {
+                margin-top: 3rem;    
+            
+                @include mq(min, 992px) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        @include mq(min, 991px) {
+            text-align: justify;
+        }
+    }
+    
+    .icon {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 1rem;
+        background: $brand-color;
+        color: #fff;
+        padding: 1rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+}

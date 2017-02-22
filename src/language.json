@@ -1,0 +1,524 @@
+{
+    "de": {
+        "key": "de",
+        "longkey": "de_DE",
+        "subtitle": "Webdesign und Softwareentwicklung in Berlin",
+        "domain": "com",
+        "contactUrl": "contact.php",
+        "meta": {
+            "description": "Entwurf, Design, Technik - alles für die neue Webseite, alles aus einer Hand",
+            "tags": "webdesign, software, berlin, seo, web, internet, friedrichshain, agency, agentur"
+        },
+        "languages": [
+            {
+                "key": "de",
+                "longkey": "de_DE",
+                "hreflang": "de-de",
+                "name": "Deutsch",
+                "link": "http://juliankern.com/de"
+            },
+            {
+                "key": "en",
+                "longkey": "en_US",
+                "hreflang": "en-us",
+                "name": "English",
+                "link": "http://juliankern.com/en"
+            }
+        ],
+        "sr": {
+            "hideModal": "Informationen verbergen",
+            "modal": "Informationen",
+            "profile": "Profil",
+            "call": "Ruf mich an:"
+        },
+        "mainscreen": {
+            "contactButton": "Schreib mir",
+            "mailMePrefix": "Schreib mir ",
+            "mailMe": "eine Mail",
+            "mailMeSuffix": "",
+            "or": "oder",
+            "name": {
+                "field": "Dein Name",
+                "placeholder": "Name"
+            },
+            "mail": {
+                "field": "Deine Mail",
+                "placeholder": "Mail"
+            },
+            "message": {
+                "field": "Deine Nachricht",
+                "placeholder": "Nachricht"
+            },
+            "required": "benöigtes Feld",
+            "submit": "Abschicken",
+            "success": {
+                "title": "Jawollja!",
+                "text": "Die Mail wurde erfolgreich verschickt!"
+            },
+            "error": {
+                "title": "Mist :(",
+                "text": "Die Mail wurde konnte nicht verschickt werden!"
+            }
+        },
+        "about": {
+            "title": "Über mich",
+            "content": [
+                "Mein Name ist Julian Kern - ich bin Webdesigner und -entwickler.",
+                "Dieses Internet hat mich schon sehr früh interessiert. Man könnte sagen, dass ich von Anfang an dabei war. Zuerst natürlich nur als Nutzer, aber auch sehr schnell mit eigenen Ideen. Es fing damals an mit dem Macromedia Dreamweaver und Adobe GoLive, aber deren Möglichkeiten waren mir dann doch zu begrenzt. Ein einfacher Texteditor - damals noch ohne Hilfmittel wie Syntax-Erkennung und Autovervollständigung - war mein erstes richtiges Werkzeug. Technologisch habe ich auch damals schon viel ausprobiert - mit Flash, Java-Applets und Serverseitigem PHP war ich früh am Nabel der Zeit.",
+                "Flash und Java-Applets benutzt man beide nicht mehr - oder sollte es zumindest nicht. Die Technologie entwickelt sich weiter, und mit einem kleinen Umweg wurde das Hobby Internet zum Beruf. Seit 2011 bin ich Haupt- und (seit 2013 auch) nebenberuflich Software Entwickler. Seit 2014 arbeite ich für den größten inhabergeführten E-Commerce-Dienstleister Deutschlands in Berlin.",
+                "Mit meinem eigenen Business habe ich mir 2013 den Traum erfüllt auch eigene Projekte von A bis Z umsetzen zu können - und zwar immer mit dem Neusten und Besten, was die Technik her gibt. Von statischen Webseiten mit reinem HTML und CSS bis zur hochkomplexen Web-Applikation mit tausenden Zeilen JavaScript-Code ist alles dabei.",
+                "Seit mehr als zehn Jahren bin ich nun nicht nur aktiv sondern auch gestalterisch im Web unterwegs, und kann auf einige Erfahrung zurückgreifen.",
+                "Interesse geweckt? Nehmen Sie Kontakt auf!"
+            ]
+        },
+        "service": {
+            "title": "Leistungen",
+            "services": [
+                {
+                    "title": "Entwurf",
+                    "icon": "software_pencil",
+                    "text": "Der Anfang Ihrer Webseite. Je sorgfältiger wir den Entwurf gemeinsam entwickeln, umso besser das Ergebnis. Am Anfang stehen - ganz analog - ein paar Skizzen, damit wir zusammen entscheiden können was zu Ihnen passt. In dieser Phase stimmen wir auch das Gesamtkonzept der Webseite ab, darauf folgen erste digitale Entwürfe."
+                },
+                {
+                    "title": "Design",
+                    "icon": "basic_webpage_img_txt",
+                    "text": "Das fertige Design wird aus den Entwürfen erstellt, indem wir uns von einem groben Layout zu den Details vorarbeiten. Wir benutzen zunächst Platzhalter-Grafiken, bis fertige Bilder oder Grafiken vorliegen. Das Design der Webseite wird perfekt an ihre Corporate Identity angepasst, oder führt eine neue ein."
+                },
+                {
+                    "title": "Technik",
+                    "icon": "basic_gear",
+                    "text": "Entwickelt wird mit den neuesten Technologien, Webspace kann auch zur Verfügung gestellt werden. Für einen Dateitransfer von Bilddaten oder Dokumenten, steht ein eigenes Webportal bereit. Standort aller Server ist Deutschland (München), und sie unterliegen damit den strengen deutschen Datenschutzgesetzen."
+                }
+            ]
+        },
+        "references": {
+            "title": "Arbeiten",
+            "text": "Seit 2014 wurden mehrere kleinere und größere Projekte nach Kundenwunsch umgesetzt. Hier ist eine kleine Auswahl davon, sowie Arbeiten an Open Source Projekten und Artikel von mir:",
+            "works": [
+                {
+                    "title": "juliankern.com",
+                    "date": "02/2017",
+                    "text": "Diese Webseite. Besonderes Augenmerk wurde auf die Performance gelegt - die Seite lädt in der Regel in unter zwei Sekunden, oft sogar in unter einer Sekunde. Damit ist sie auch auf Mobilgeräten schnell - und dank SSL-Zertifikat - auch sicher erreichbar.",
+                    "image": {
+                        "name": "mainscreen",
+                        "extension": "jpg",
+                        "alt": "juliankern.com 2017"
+                    },
+                    "tags": [
+                        "StaticSite",
+                        "Responsive",
+                        "Performance"
+                    ]
+                },
+                {
+                    "title": "raspi-heater",
+                    "date": "11/2016",
+                    "text": "Ein kleines Opensource-Projekt für meine eigene Heizung, und eine erste Erfahrung im \"Internet of Things\" - als Basis dient ein Linux-Computer in Scheckkartengröße namens \"RaspberryPi\". Je nach Tageszeit und ob jemand zuhause ist, wird die Temperatur in der Wohnung geregelt.",
+                    "links": [
+                        {
+                            "title": "raspi-heater auf GitHub",
+                            "url": "https://github.com/juliankern/raspi-heater"
+                        }
+                    ],
+                    "image": {
+                        "name": "homekit",
+                        "extension": "jpg",
+                        "alt": "raspi-heater on iOS HomeKit"
+                    },
+                    "tags": [
+                        "opensource",
+                        "iOS",
+                        "NodeJS",
+                        "RaspberryPi",
+                        "SmartHome"
+                    ],
+                    "data": {
+                        "@context": "http://schema.org/",
+                        "@type": "Product",
+                        "name": "raspi-heater",
+                        "image": "https://juliankern.com/assets/img/homekit-960.jpg",
+                        "description": "Ein kleines Opensource-Projekt für meine eigene Heizung, und eine erste Erfahrung im \"Internet of Things\" - als Basis dient ein Linux-Computer in Scheckkartengröße namens \"RaspberryPi\". Je nach Tageszeit und ob jemand zuhause ist, wird die Temperatur in der Wohnung geregelt.",
+                        "url": "https://github.com/juliankern/raspi-heater"
+                    }
+                },
+                {
+                    "title": "hfp-innovationsberatung.de",
+                    "date": "06/2016",
+                    "text": "Eine Webseite auf Basis von Wordpress, damit die Firma die Inhalte selbst verändern kann. Suchmaschinen-Optimierung im Code und per Plugin, und als Vorbereitung für eine SEO-Agentur, die sich um die Texte gekümmert hat.",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://www.hfp-innovationsberatung.de/"
+                        }
+                    ],
+                    "image": {
+                        "name": "hfp-innovation",
+                        "extension": "png",
+                        "alt": "HFP Innovationsberatung"
+                    },
+                    "tags": [
+                        "KundenProjekt",
+                        "WordPress"
+                    ]
+                },
+                {
+                    "title": "Blog-Post über SASS",
+                    "date": "01/2016",
+                    "text": "Ich habe mir ein paar Gedanken zu einer sogenannten Best-Practice in SASS-Code gemacht, und diese veröffentlicht. Hier geht es darum, dass man die \"extend\"-Funktion in SASS besser nicht benutzen sollte. Oder nur, wenn man wirklich weiß, was man tut.",
+                    "links": [
+                        {
+                            "title": "Zum Posting",
+                            "url": "https://medium.com/@juliankern/sass-why-you-should-use-mixins-instead-of-extends-30d3ab2d7215#.b3qgzzqnl"
+                        }
+                    ],
+                    "image": {
+                        "name": "medium-sass",
+                        "extension": "png",
+                        "alt": "Blog-Post über SASS"
+                    },
+                    "tags": [
+                        "Artikel",
+                        "Blog",
+                        "SASS",
+                        "BestPractice"
+                    ]
+                },
+                {
+                    "title": "fliesen-loescher.de",
+                    "date": "11/2015",
+                    "text": "Die Firma Fliesen Löscher GmbH kam auf mich zu, mit dem Wunsch eine neue und technisch aktuelle Webseite zu bekommen, die gleichzeitig leicht erweiterbar ist. Basis war auch hier wieder eine angepasste Version von Twitter Bootstrap. Die Seite wurde in statischem HTML5 und CSS3 umgesetzt, Inhalte werden durch einen Grunt Buildprozess eingefügt, der sich auch um viele andere Punkte wie die Optimierung der Bilder kümmert.",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://fliesen-loescher.de/"
+                        }
+                    ],
+                    "image": {
+                        "name": "fliesen_loescher",
+                        "extension": "png",
+                        "alt": "Fliesen Löscher"
+                    },
+                    "tags": [
+                        "KundenProjekt",
+                        "jQuery",
+                        "StaticSite",
+                        "Bootstrap"
+                    ]
+                },
+                {
+                    "title": "meldody-photography.de",
+                    "date": "04/2014",
+                    "text": "Jessica Melody Paefgen ist eine junge und neue Fotografin. Noch dazu eine gute Freundin von mir. Es war also klar dass ich mich um ihre erste Homepage kümmere. Mit dem Endergebnis waren dann auch alle sehr zufrieden. HTML5, CSS3, Angular.js und responsive Design.",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://melody-photography.de"
+                        }
+                    ],
+                    "image": {
+                        "name": "melodyphotographyde",
+                        "extension": "png",
+                        "alt": "Melody-Photography"
+                    },
+                    "tags": [
+                        "AngularJS",
+                        "Responsive"
+                    ]
+                },
+                {
+                    "title": "oadelmann.de",
+                    "date": "02/2014",
+                    "text": "Orthopädie Adelmann brauchte eine neue Homepage, und hat sich an mich gewandt. Auf Basis von Twitter Bootstrap wurde eine Webseite erstellt, die voll responsive ist und auch noch gut aussieht. Reines HTML/CSS und JavaScript/jQuery, da sich die Inhalte nur selten ändern.",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://oadelmann.de"
+                        }
+                    ],
+                    "image": {
+                        "name": "oadelmann",
+                        "extension": "png",
+                        "alt": "Orthopädie Adelmann"
+                    },
+                    "tags": [
+                        "KundenProjekt",
+                        "StaticSite",
+                        "Bootstrap",
+                        "Responsive",
+                        "jQuery"
+                    ]
+                }
+            ]
+        },
+        "contact": {
+            "title": "Kontakt",
+            "address": {
+                "name": "Julian Kern",
+                "streetAddress": "Hausburgstr. 21",
+                "postalCode": "10249",
+                "addressLocality": "Berlin",
+                "addressCountry": "Deutschland"
+            }
+        }
+    },
+    "en": {
+        "key": "en",
+        "longkey": "de_DE",
+        "subtitle": "Webdesign and software development in Berlin",
+        "domain": "com",
+        "contactUrl": "contact.php",
+        "meta": {
+            "description": "Draft, Design, Technology - everything for your new site, all from one source",
+            "tags": "webdesign, software, berlin, seo, web, internet, friedrichshain, agency, agentur"
+        },
+        "languages": [
+            {
+                "key": "de",
+                "longkey": "de_DE",
+                "hreflang": "de-de",
+                "name": "Deutsch",
+                "link": "http://juliankern.com/de"
+            },
+            {
+                "key": "en",
+                "longkey": "en_US",
+                "hreflang": "en-us",
+                "name": "English",
+                "link": "http://juliankern.com/en"
+            }
+        ],
+        "sr": {
+            "hideModal": "Hide information",
+            "modal": "information",
+            "profile": "profile",
+            "call": "Call me:"
+        },
+        "mainscreen": {
+            "contactButton": "Get in touch",
+            "mailMePrefix": "Just ",
+            "mailMe": "write me a mail",
+            "mailMeSuffix": "",
+            "or": "or",
+            "name": {
+                "field": "Your name",
+                "placeholder": "Name"
+            },
+            "mail": {
+                "field": "Your mail",
+                "placeholder": "Mail"
+            },
+            "message": {
+                "field": "Your message",
+                "placeholder": "Message"
+            },
+            "required": "required field",
+            "submit": "Send",
+            "success": {
+                "title": "Yessss!",
+                "text": "The mail was sent successfully!"
+            },
+            "error": {
+                "title": "Meh :(",
+                "text": "Couldn't send the mail"
+            }
+        },
+        "about": {
+            "title": "About me",
+            "content": [
+                "My name is Julian Kern - I'm a web designer and developer.",
+                "The internet interested me quite early already. One could say I've been there right from the beginning. At first obviously just as a user, but pretty quickly with my own ideas. It all started with Macromedia Dreamweaver and Adobe GoLive as my first tools, but that wasn't enough. A simple text editor - without features like syntax highlighting and autocompletition - was my first real tool. I tried a lot of different technologies back then - Flash, Java-Applets and PHP on the backend.",
+                "Flash and Java was outdated pretty fast. Today both isn't used anymore - or shouldn't be. Technoligies evolved fast, and the internet became my job with a little detour. I'm a full time software devloper since 2011 now, and started my own side business for web design and devlopment in 2013. Right now I'm working for the biggest owner controlled e-commerce agency of Germany in Berlin since 2014.",
+                "With my own business a dream came true in 2013, to finally develop projects from A to Z - with all the new and fancy technologies the web has to offer. Starting from static pages with just HTML and CSS, up to extensive web applications with thousands of lines of JavaScript code.",
+                "I'm now actively developing websites for more than ten years, and have lots of diverse experiences.",
+                "Did I arouse your interest? Get in touch!"
+            ]
+        },
+        "service": {
+            "title": "Services",
+            "services": [
+                {
+                    "title": "Draft",
+                    "icon": "software_pencil",
+                    "text": "The beginnig of every good website. The more accurate we're developing the draft together, the better the result. We start - not very digital - with a simple paper sketch to get a good idea what you want and need. In this phase, we decide also about the master plan for the website - followed by first digital outlines."
+                },
+                {
+                    "title": "Design",
+                    "icon": "basic_webpage_img_txt",
+                    "text": "The final design is created from our sketches and outlines by working from a rough layout through the details. We're using first placeholder, until final graphics and contents are done. The design will be a perfect match for your corporate identity - or we create a new one together."
+                },
+                {
+                    "title": "Technology",
+                    "icon": "basic_gear",
+                    "text": "We're implementing with the newest technologies - you don't have any webspace? We got your back. For a safe and secure data transfer, a special portal is also available. All servers are located in Munich, Germany an are therefore subject of the strict german privacy laws."
+                }
+            ]
+        },
+        "references": {
+            "title": "Works",
+            "text": "I worked on several different small and larger projects for customers since 2014, as well as on articles and open source projects. This is a small overview:",
+            "works": [
+                {
+                    "title": "juliankern.com",
+                    "date": "02/2017",
+                    "text": "This website. Special attention was paid to the performance - this page loads usually in under two seconds, mostly even in under one second, so that it really fast, even on mobile devices.",
+                    "image": {
+                        "name": "mainscreen",
+                        "extension": "jpg",
+                        "alt": "juliankern.com 2017"
+                    },
+                    "tags": [
+                        "StaticSite",
+                        "Responsive",
+                        "Performance"
+                    ]
+                },
+                {
+                    "title": "raspi-heater",
+                    "date": "11/2016",
+                    "text": "A small opensource project for my own heater and my first experience with the so called \"internet of things\" - based on the miniature computer \"RaspberryPi\". Depending on the time of day and if someone’s at home, the temperature is changed up or down",
+                    "links": [
+                        {
+                            "title": "raspi-heater auf GitHub",
+                            "url": "https://github.com/juliankern/raspi-heater"
+                        }
+                    ],
+                    "image": {
+                        "name": "homekit",
+                        "extension": "jpg",
+                        "alt": "raspi-heater on iOS HomeKit"
+                    },
+                    "tags": [
+                        "opensource",
+                        "iOS",
+                        "NodeJS",
+                        "RaspberryPi",
+                        "SmartHome"
+                    ],
+                    "data": {
+                        "@context": "http://schema.org/",
+                        "@type": "Product",
+                        "name": "raspi-heater",
+                        "image": "https://juliankern.com/assets/img/homekit-960.jpg",
+                        "description": "A small opensource project for my own heater and my first experience with the so called \"internet of things\" - based on the miniature computer \"RaspberryPi\". Depending on the time of day and if someone’s at home, the temperature is changed up or down",
+                        "url": "https://github.com/juliankern/raspi-heater"
+                    }
+                },
+                {
+                    "title": "hfp-innovationsberatung.de",
+                    "date": "06/2016",
+                    "text": "A website based on Wordpress was the best solution to allow the company to change the content on their own. Search engine optimisations in the code and via plugin, and as a preparation for the SEO agency that was hired afterwards for the content.",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://www.hfp-innovationsberatung.de/"
+                        }
+                    ],
+                    "image": {
+                        "name": "hfp-innovation",
+                        "extension": "png",
+                        "alt": "HFP Innovationsberatung"
+                    },
+                    "tags": [
+                        "CustomerCustomerProject",
+                        "WordPress"
+                    ]
+                },
+                {
+                    "title": "Blog post about SASS",
+                    "date": "01/2016",
+                    "text": "I had a few thoughts about best practices for SASS code. This article is about why it’s better to use the mixin function, instead of the extend function.",
+                    "links": [
+                        {
+                            "title": "Posting",
+                            "url": "https://medium.com/@juliankern/sass-why-you-should-use-mixins-instead-of-extends-30d3ab2d7215#.b3qgzzqnl"
+                        }
+                    ],
+                    "image": {
+                        "name": "medium-sass",
+                        "extension": "png",
+                        "alt": "Blog post about SASS"
+                    },
+                    "tags": [
+                        "Blog",
+                        "SASS",
+                        "BestPractice"
+                    ]
+                },
+                {
+                    "title": "fliesen-loescher.de",
+                    "date": "11/2015",
+                    "text": "\"Fliesen Löscher GmbH\" came to me with the need for a new and up to date website, which is supposed to be easily extendable. The basis for this site was a customised version of Twitter Bootstrap. The project includes a \"Grunt\" build task to build the site and convert and optimise content and images.",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://fliesen-loescher.de/"
+                        }
+                    ],
+                    "image": {
+                        "name": "fliesen_loescher",
+                        "extension": "png",
+                        "alt": "Fliesen Löscher"
+                    },
+                    "tags": [
+                        "CustomerProject",
+                        "StaticSite",
+                        "Bootstrap"
+                    ]
+                },
+                {
+                    "title": "meldody-photography.de",
+                    "date": "04/2014",
+                    "text": "Jessica Melody Paefgen is a good friend of mine and photographer. It was pretty clear, that I’d be the one to build her first website. The result was a simple, angularJS based and responsive website",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://melody-photography.de"
+                        }
+                    ],
+                    "image": {
+                        "name": "melodyphotographyde",
+                        "extension": "png",
+                        "alt": "Melody-Photography"
+                    },
+                    "tags": [
+                        "AngularJS",
+                        "Responsive"
+                    ]
+                },
+                {
+                    "title": "oadelmann.de",
+                    "date": "02/2014",
+                    "text": "A local orthopaedics needed a new website - from me. This one was built with  a customised Twitter Bootstrap and jQuery. A beautiful responsive static website, because the content isn’t changed very often.",
+                    "links": [
+                        {
+                            "title": "Zur Webseite",
+                            "url": "http://oadelmann.de"
+                        }
+                    ],
+                    "image": {
+                        "name": "oadelmann",
+                        "extension": "png",
+                        "alt": "Orthopädie Adelmann"
+                    },
+                    "tags": [
+                        "CustomerProject",
+                        "StaticSite",
+                        "Bootstrap",
+                        "Responsive",
+                        "jQuery"
+                    ]
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contact",
+            "address": {
+                "name": "Julian Kern",
+                "streetAddress": "Hausburgstr. 21",
+                "postalCode": "10249",
+                "addressLocality": "Berlin",
+                "addressCountry": "Germany"
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.about {
+    &--logo {
+        width: rem-calc(80);
+        height: rem-calc(96);
+        display: inline-block;
+        background: #555;
+        float: left;
+        margin: .25rem .5rem .5rem 0;
+        border-radius: rem-calc(5);
+        
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0 .5rem .5rem 0;
+        }
+        
+        @include mq(min, 480px) {
+            width: rem-calc(150);
+            height: rem-calc(180);  
+            
+            img {
+                margin: 0 1rem 1rem 0;
+            }  
+        }
+    }
+}

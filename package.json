@@ -1,0 +1,48 @@
+{
+  "name": "jk17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass --watch --output assets assets",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.jukn.de/juliankern.com/website-2017.git"
+  },
+  "author": "Julian Kern <mail@juliankern.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "autoprefixer": "^6.6.1",
+    "glob": "^7.1.1",
+    "grunt": "^1.0.1",
+    "grunt-bake": "^1.8.0",
+    "grunt-cdnify": "^1.0.2",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-critical": "^0.2.2",
+    "grunt-image": "^2.2.2",
+    "grunt-inline": "^0.3.6",
+    "grunt-postcss": "^0.8.0",
+    "grunt-real-favicon": "^0.2.0",
+    "grunt-responsive-images": "^1.10.1",
+    "grunt-sass": "^1.2.1",
+    "grunt-svgstore": "^1.0.0",
+    "grunt-webp": "^0.0.4",
+    "jit-grunt": "^0.10.0",
+    "lodash": "^4.16.6",
+    "pixrem": "^3.0.2",
+    "webp-bin": "^0.1.4",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {}
+}

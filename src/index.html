@@ -1,0 +1,19 @@
+<!--(bake tpl/includes/head.html)-->
+
+<div class="scroller"></div>
+<main>
+    <ul class="languages">
+        <!--(bake-start _foreach="lang:languages")-->
+            <!--(bake-start _if="key === lang.key")--><li class="active"><!--(bake-end)-->
+            <!--(bake-start _if="key !== lang.key")--><li><!--(bake-end)-->
+                <a href="{{lang.link | url}}">{{lang.name}}</a>
+            </li>
+        <!--(bake-end)-->
+    </ul>
+    <!--(bake tpl/mainscreen.html)-->
+    <!--(bake tpl/about.html)-->
+    <!--(bake tpl/service.html)-->
+    <!--(bake tpl/references.html)-->
+    <!--(bake tpl/contact.html)-->
+</main>
+<!--(bake tpl/includes/footer.html)-->

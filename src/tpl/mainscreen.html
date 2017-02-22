@@ -1,0 +1,98 @@
+<section class="mainscreen">
+    <div class="noscript">
+        <picture class="mainscreen--background">
+            <source srcset="
+                    assets/img/mainscreen-480.webp 480w,
+                    assets/img/mainscreen-640.webp 640w,
+                    assets/img/mainscreen-960.webp 960w,
+                    assets/img/mainscreen-1280.webp 1280w,
+                    assets/img/mainscreen-1440.webp 1440w,
+                    assets/img/mainscreen-1920.webp 1920w
+                "
+                type="image/webp"
+                sizes="100vh" 
+            >
+            <source srcset="
+                    assets/img/mainscreen-480.jpg 480w,
+                    assets/img/mainscreen-640.jpg 640w,
+                    assets/img/mainscreen-960.jpg 960w,
+                    assets/img/mainscreen-1280.jpg 1280w,
+                    assets/img/mainscreen-1440.jpg 1440w,
+                    assets/img/mainscreen-1920.jpg 1920w
+                "
+                sizes="100vh" 
+            >
+            <img src="assets/img/mainscreen-blur.jpg?__inline=true" alt="Desk Background" class="lazyloaded">
+        </picture>
+    </div>
+    <picture class="mainscreen--background">
+        <source srcset="assets/img/clear.gif" data-srcset="
+                assets/img/mainscreen-480.webp 480w,
+                assets/img/mainscreen-640.webp 640w,
+                assets/img/mainscreen-960.webp 960w,
+                assets/img/mainscreen-1280.webp 1280w,
+                assets/img/mainscreen-1440.webp 1440w,
+                assets/img/mainscreen-1920.webp 1920w
+            "
+            type="image/webp"
+            sizes="100vh" 
+        >
+        <source srcset="assets/img/clear.gif" data-srcset="
+                assets/img/mainscreen-480.jpg 480w,
+                assets/img/mainscreen-640.jpg 640w,
+                assets/img/mainscreen-960.jpg 960w,
+                assets/img/mainscreen-1280.jpg 1280w,
+                assets/img/mainscreen-1440.jpg 1440w,
+                assets/img/mainscreen-1920.jpg 1920w
+            "
+            sizes="100vh" 
+        >
+        <img src="assets/img/mainscreen-blur.jpg?__inline=true" alt="Desk Background" class="lazyload">
+    </picture>
+    <div class="content">
+        <img src="assets/svg/logo.svg?__inline=true" class="icon icon-logo" alt="juliankern.{{domain}} logo">
+        <h1 class="headline" aria-hidden="true" role="presentational">
+            <span>julian</span><span>kern</span><span>.</span><span>{{domain}}</span>
+        </h1>
+        <h1 class="sr-only">juliankern.{{domain}}</h1>
+
+        <div class="mainscreen--form">
+            <input type="checkbox" id="contactForm" aria-hidden="true">
+            <div class="btn-group btn-group-lg">
+                <label role="button" for="contactForm" class="btn btn-outline-brand" href="#contact">{{mainscreen.contactButton}}</label>
+            </div>
+            <div class="tab">
+                <div class="tab--inner">
+                    <div class="alert alert-success">
+                        <strong>{{mainscreen.success.title}}</strong><br>{{mainscreen.success.text}}
+                    </div>
+                    <div class="alert alert-error">
+                        <strong>{{mainscreen.error.title}}</strong><br>{{mainscreen.error.text}}
+                    </div>
+                    <form method="POST" action="{{contactUrl | url}}" onsubmit="return submitContact(this)">
+                        <div class="text-xs-center">{{mainscreen.mailMePrefix}}<a data-mail href="mailto:honeypot@juliankern.com">{{mainscreen.mailMe}}</a>{{mainscreen.mailMeSuffix}}</div>
+                        <div class="hr"><span>{{mainscreen.or}}</span></div>
+                        <div class="form-group">
+                            <label for="name">{{mainscreen.name.field}} *</label>
+                            <input name="name" type="text" required class="form-control" id="name" placeholder="{{mainscreen.name.placeholder}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">{{mainscreen.mail.field}} *</label>
+                            <input name="email" type="email" required class="form-control" id="mail" placeholder="{{mainscreen.mail.placeholder}}">
+                        </div>
+                        <div class="form-group form-message">
+                            <label for="message">{{mainscreen.message.field}} *</label>
+                            <textarea name="message" class="form-control" required id="message" rows="3" placeholder="{{mainscreen.message.placeholder}}"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <small>* {{mainscreen.required}}</small>
+                        </div>
+                        <div class="g-recaptcha" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback" data-sitekey="6LddJMgSAAAAAG4Y02QzpCo-7uZB0qYggffXmdZG"></div>
+                        <button type="submit" class="btn btn-brand" disabled>{{mainscreen.submit}}</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mainscreen--dummy"></div>
+        </div>
+    </div>
+</section>

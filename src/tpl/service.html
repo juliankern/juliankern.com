@@ -1,0 +1,18 @@
+<section class="service">
+    <div class="container">
+        <h2>{{service.title}}</h2>
+        <hr class="small">
+        <div class="row">
+            <!--(bake-start _foreach="ser:service.services")-->
+                <div class="col-lg-4">
+                    <!--(bake includes/icon.html icon="{{ser.icon}}")-->
+                    <h3>{{ser.title}}</h3>
+                    <hr class="small">
+                    <p>
+                        {{ser.text}}
+                    </p>
+                </div>
+            <!--(bake-end)-->
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+stages:
+  - test
+  - prod
+
+test:
+  stage: test
+  environment:
+    name: testing
+  only:
+    - dev
+  script:
+   - npm install
+   - composer install
+   - NODE_ENV=test grunt build
+   - rm -rf /var/www/dev.jukn.de/html/juliankern_com/*
+   - cp -r dist/* /var/www/dev.jukn.de/html/juliankern_com/
+
+prod:
+  stage: prod
+  environment:
+    name: production
+  only:
+    - master
+  script:
+   - npm install
+   - composer install
+   - NODE_ENV=production grunt build
+   - rm -rf /var/www/juliankern.com/html/*
+   - cp -r dist/* /var/www/juliankern.com/html/
